@@ -134,7 +134,6 @@ password required pam_permit.so' >/etc/pam.d/common-password && chmod +x /etc/pa
   read -t 120 -n 1 -rsp $'\e[1;97m           Preciona Enter Para continuar\n'
   clear && clear
   apt update
-  apt upgrade -y
   wget -O /usr/bin/install https://raw.githubusercontent.com/NetVPS/Multi-Script/main/0-Instalador/install.sh &>/dev/null
   chmod +rwx /usr/bin/install
 }
